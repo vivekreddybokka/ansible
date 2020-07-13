@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  gather_facts: yes
+  remote_user: su
+  tasks:
+      - name: upgrade all packages
+        yum:
+          name: '*'
+          state: latest
