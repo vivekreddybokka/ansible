@@ -26,7 +26,7 @@
 
       - name: "copy config file to remote host"
         copy:
-          src: /root/ansible/config.json
+          src: /ansible/config.json
           dest: /opt/aws/amazon-cloudwatch-agent/bin/config.json
 
       - name: change permissions
